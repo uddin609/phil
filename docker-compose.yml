@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+        auth:
+                image: uddin609/auth:01
+                ports:
+                        - "5000:8000"
+        user:
+                image: uddin609/user:01
+                ports:
+                        - "5001:3000"
+        admin:
+                image: uddin609/admin:01
+                ports:
+                        - "5003:8000"
+                
+
